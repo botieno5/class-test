@@ -1,6 +1,5 @@
 
 node {
-    def app
 
     stage('Clone Repository')
     {
@@ -10,16 +9,16 @@ node {
     stage('Show me the files') {
 
         sh "ls -l"	
+       
     }
-    
-    stage('Apply changes to the environment'){
-    
-        sh "ls -l"
-        sh "php -s localhost:5000"
-    
+
+      stage('Apply changes to the environment') {
+
+        sh "ls -l"	
+        sh "echo run application"
+       
     }
-    
-    }
+}
 
 
 
